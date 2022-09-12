@@ -1,0 +1,7 @@
+*{
+    margin: 0;
+    padding: 10px;
+}
+.container nav{
+    background-color: rgb(255, 127, 0)!important;
+}
