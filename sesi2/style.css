@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    box-shadow: 5px 0px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.navbar .nav-brand{
+    padding: 0 35px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.navbar ul{
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(128, 128, 128);
+}
+/* main */
+main{
+    padding: 35px;
+    background-color: #eee;
+}
+
+/* information header */
+.information{
+    width: 50%;
+    display: flex;
+}
+.img img{
+    border-radius: 100px;
+    padding: 10px;
+}
+.text-information{
+    padding: 10px;
+}
+.text-information h2{
+    padding: 5px 0;
+}
+.text-information p{
+    color: #aaa;
+    margin-bottom: 10px;
+}
+.button-list{
+    display: flex;
+    gap: 10px;
+}
+button{
+    width: 100px;
+    height: 45px;
+}
+.blue-button{
+    color: #fff;
+    background-color: blue;
+    border-radius: 5px;
+    font-weight: bolder;
+    box-shadow: 1p 1px 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.green-out-button{
+    color: green;
+    background-color: #fff;
+    border: solid 1px green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* content */
+.content{
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 35px 100px;
+    margin: 20px;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    justify-items: center;
+}
+/* full-information */
+.full-information{
+    width: 50%;
+}
+.full-information table tr td{
+    padding: 5px 50px;
+}
+.bold{
+    font-weight: bolder;
+}
+/* form */
+form{
+    padding: 15px 25px;
+}
+label{
+    margin: 5px 0;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+}
+.submit-btn{
+    padding: 10px;
+    color: #fff;
+    background-color: green;
+    border-radius: 5px;
+    font-weight: bold;
+}
