@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assigment 1</title>
+    <link rel="stylesheet" href="/assigment2/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="#" class="nav-brand">Overthinking</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">My Inventory</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="information">
+          <div class="img">
+            <img src="/assets/pp.jpeg" alt="pp" width="150px" height="150px" />
+          </div>
+          <div class="text-information">
+            <h2 id="fullname">Dady Bima Nur Sejati</h2>
+            <p id="roles">Web Developer</p>
+            <div class="button-list">
+              <button type="submit" class="blue-button">Kontak</button>
+              <button type="submit" class="green-out-button">Resume</button>
+            </div>
+          </div>
+        </div>
+        <div class="full-information">
+          <table id="table">
+            <tr>
+              <td class="bold">Avaiabillity</td>
+              <td id="1">Full time</td>
+            </tr>
+            <tr>
+              <td class="bold">Usia</td>
+              <td id="2">17</td>
+            </tr>
+            <tr>
+              <td class="bold">Lokasi</td>
+              <td id="3">Semarang, Indonesia</td>
+            </tr>
+            <tr>
+              <td class="bold">Pengalaman</td>
+              <td id="4">2</td>
+            </tr>
+            <tr>
+              <td class="bold">Email</td>
+              <td id="5">dadybima171@gmail.com</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <form id="form1" name="form1" onsubmit="return false">
+        <label for="nama">Nama</label><br />
+        <input type="text" id="nama" required /><br /><br />
+        <label for="nama">Role</label><br />
+        <input type="text" id="role" required /><br /><br />
+        <label for="nama">Availabillity</label><br />
+        <input type="text" id="avail" required /><br /><br />
+        <label for="nama">Age</label><br />
+        <input type="text" id="age" required /><br /><br />
+        <label for="nama">Lokasi</label><br />
+        <input type="text" id="lokasi" required /><br /><br />
+        <label for="nama">Years Experience</label><br />
+        <input type="text" id="exp" required /><br /><br />
+        <label for="nama">Email</label><br />
+        <input type="text" id="email" required /><br /><br />
+        <button
+          id="tombol_form"
+          type="submit"
+          value="SUBMIT"
+          onclick="tampilkan_nilai()"
+          class="submit-btn"
+          style="cursor: pointer; width: 100%"
+        >
+          SUBMIT
+        </button>
+      </form>
+      <script>
+        document.getElementById("tombol_form").addEventListener("click", tampikan_nilai);
+        function tampilkan_nilai() {
+          var nama = document.getElementById("nama").value;
+          document.getElementById("fullname").innerHTML = nama;
+          var role = document.getElementById("role").value;
+          document.getElementById("roles").innerHTML = role;
+          var avail = document.getElementById("avail").value;
+          document.getElementById("1").innerHTML = avail;
+          var age = document.getElementById("age").value;
+          document.getElementById("2").innerHTML = age;
+          var lokasi = document.getElementById("lokasi").value;
+          document.getElementById("3").innerHTML = lokasi;
+          var exp = document.getElementById("exp").value;
+          document.getElementById("4").innerHTML = exp;
+          var email = document.getElementById("email").value;
+          document.getElementById("5").innerHTML = email;
+        }
+      </script>
+    </main>
+  </body>
+</html>
